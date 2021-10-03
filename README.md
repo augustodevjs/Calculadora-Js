@@ -15,7 +15,7 @@ Foram feitas algumas estilizações dentro do projeto.
 
 ### 💻 Tecnologias utilizadas
 
-Nesta Calculadora Javascript foram utilizadas as seguintes tecnologias
+Nesta calculadora foi utilizadas as seguintes tecnologias:
 
 - HTML
 - CSS
