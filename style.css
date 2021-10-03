@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+    outline: 0;
+}
+
+html {
+    background: #091924;
+}
+  
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+  }
+
+/* Calculadora */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.display {
+    text-align: right;
+    padding: 70px 5px 5px 5px;
+    font-size: 36px;
+    border-radius: 8px 8px 0px 0px;
+    border: none;
+}
+
+.btn, .btn-clear, .btn-del, .btn-eq  {
+    padding: 30px;
+    width: 100%;
+    background: #0F2536;
+    color:#FFFFFF;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    height: 100%;
+}
+
+.zero {
+    border-radius: 0px 0px 0px 8px; 
+}
+
+.btn-clear {
+    background: #FDA000;
+}
+
+.btn-eq {
+    background: #FDA000;
+    border-radius: 0px 0px 8px 0px;
+}
+
+.btn-clear:hover,.btn-eq:hover {
+    background: #44FA0C;
+}
+
+.btn-num:hover, .btn-simbol:hover, .btn-del:hover {
+    background: #00E391;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 490px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .display {
+        text-align: right;
+        padding: 70px 5px 5px 5px;
+        font-size: 24px;
+        border-radius: 8px 8px 0px 0px;
+        border: none;
+        width: 100%;
+    }
+    
+    .btn, .btn-clear, .btn-del, .btn-eq  {
+        padding: 20px;
+        width: 100%;
+        background: #0F2536;
+        color:#FFFFFF;
+        font-size: 30px;
+        cursor: pointer;
+        border: none;
+        height: 100%;
+    }
+
+    .zero {
+        border-radius: 0px 0px 0px 8px; 
+    }
+    
+    .btn-clear {
+        background: #FDA000;
+    }
+    
+    .btn-eq {
+        background: #FDA000;
+        border-radius: 0px 0px 8px 0px;
+    }
+    
+    .btn-clear:hover,.btn-eq:hover {
+        background: #44FA0C;
+    }
+    
+    .btn-num:hover, .btn-simbol:hover, .btn-del:hover {
+        background: #00E391;
+    }
+}
